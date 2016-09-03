@@ -17,9 +17,13 @@ You can find a few screenshots on the Store.
 ### Inspiration
 
 The development was inspired by two open source projects:
-[WPF Jigsaw Puzzle](http://www.codeproject.com/Articles/117037/WPF-Jigsaw-Puzzle)
+
+* [WPF Jigsaw Puzzle](http://www.codeproject.com/Articles/117037/WPF-Jigsaw-Puzzle)
 (WPF) licensed under [CPOL 1.0.2](http://www.codeproject.com/info/cpol10.aspx)
-and [C# Jigsaw Puzzle Game](http://freesourcecode.net/csharpprojects/40595/C%23-Jigsaw-Puzzle-Game-in-csharp#.Vzh1uGzQCwV)
+
+and
+
+* [C# Jigsaw Puzzle Game](http://freesourcecode.net/csharpprojects/40595/C%23-Jigsaw-Puzzle-Game-in-csharp#.Vzh1uGzQCwV)
 (Windows Forms), no license identified.
 
 Puzzle Game is an improvement over these projects towards Universal Windows Platform (UWP).
@@ -38,8 +42,11 @@ pull requests are always welcome. I will try to answer you within a few days.
 
 ### System Requirements
 #### Minimum
+
 **OS** Windows 10, Windows 10 Mobile
+
 **Architecture** x86, x64
+
 #### Recommended
 Touch Screen for better User Experience
 
@@ -52,8 +59,8 @@ running Windows 10.
 
 The MIT License (MIT) Copyright (c) 2016 Oleksandr Volynets
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the ìSoftwareî), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the ‚ÄúSoftware‚Äù), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED ìAS ISî, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+THE SOFTWARE IS PROVIDED ‚ÄúAS IS‚Äù, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
