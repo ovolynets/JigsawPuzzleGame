@@ -1,0 +1,106 @@
+﻿<Page
+    x:Class="PuzzleGame.View.AboutPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <Style TargetType="TextBlock" x:Key="AboutFont">
+            <Setter Property="FontFamily" Value="Comic Sans MS"/>
+            <Setter Property="TextWrapping" Value="WrapWholeWords"/>
+            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+        </Style>
+    </Page.Resources>
+
+    <Grid Background="{StaticResource BackgroundTheme}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="600" MinWidth="400"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Button Grid.Column="0" HorizontalAlignment="Left" Background="Transparent" VerticalAlignment="Top">
+            <Image Source="../Assets/icons/1463313288_navigation-left_blue.png" Width="100" PointerPressed="MainMenu_OnClick"/>
+        </Button>
+        <ScrollViewer Grid.Column="1" VerticalScrollBarVisibility="Hidden">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="1" Style="{StaticResource AboutFont}" x:Uid="GameName" Text="" FontSize="40"/>
+                <TextBlock Grid.Row="2" Style="{StaticResource AboutFont}" x:Uid="GameVersion" VerticalAlignment="Top" FontSize="20">
+                    <Run>Version </Run>
+                    <Run Text="{x:Bind VersionNumber}"></Run>
+                </TextBlock>
+                <Grid Grid.Row="3" Margin="0,20,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="100"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Style="{StaticResource AboutFont}" Text="This game uses 3rd party resources" FontSize="24" VerticalAlignment="Top"/>
+                    <TextBlock Grid.Column="1" Style="{StaticResource AboutFont}" Text="Show" Name="ToggleLicenses" FontSize="24" Foreground="Blue" VerticalAlignment="Top" Tapped="ToggleLicensesView_OnClick"/>
+                </Grid>
+                <Grid Grid.Row="4" Margin="0,20,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="100"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Style="{StaticResource AboutFont}" Text="This game was inspired by Open Source projects" FontSize="24" VerticalAlignment="Top"/>
+                    <TextBlock Grid.Column="1" Style="{StaticResource AboutFont}" Text="Show" Name="ToggleOpenSourceProjects" FontSize="24" Foreground="Blue" VerticalAlignment="Top" Tapped="ToggleOpenSourceProjects_OnTapped"/>
+                </Grid>
+                <Border Grid.Row="5" Background="#F4F2D5" Name="Licenses" Visibility="Collapsed">
+                    <TextBlock Style="{StaticResource AboutFont}"
+                               Margin="20"
+                               FontSize="18"
+                               VerticalAlignment="Top">
+                        <Run>Icons taken from the </Run>
+                        <Hyperlink NavigateUri="https://www.iconfinder.com/iconsets/super-mono-reflection">super-mono-reflection</Hyperlink>
+                        <Run>icon set by</Run>
+                        <Hyperlink NavigateUri="http://www.doublejdesign.co.uk/">Double-J designs</Hyperlink>
+                        <Run>, used under</Run>
+                        <Hyperlink NavigateUri="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</Hyperlink>
+                        <Run>.</Run>
+                        <LineBreak/>
+                        <LineBreak/>
+                        <Run>Sounds used:</Run>
+                        <LineBreak/>
+                        <Hyperlink NavigateUri="https://www.freesound.org/people/lemonjolly/sounds/273925/">Hooray! "Yeah!"</Hyperlink>
+                        <Run> by </Run>
+                        <Hyperlink NavigateUri="https://www.freesound.org/people/lemonjolly/">lemonjolly</Hyperlink>
+                        <Run> licensed under </Run>
+                        <Hyperlink NavigateUri="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</Hyperlink>
+                        <Run>,</Run>
+                        <LineBreak/>
+                        <Hyperlink NavigateUri="https://www.freesound.org/people/kaonaya/sounds/131333/">clap 3.wav</Hyperlink>
+                        <Run> by </Run>
+                        <Hyperlink NavigateUri="https://www.freesound.org/people/kaonaya/">kaonaya</Hyperlink>
+                        <Run> Licensed under </Run>
+                        <Hyperlink NavigateUri="http://creativecommons.org/publicdomain/zero/1.0/">CC BY 0</Hyperlink>
+                        <Run>.</Run>
+                    </TextBlock>
+                </Border>
+                <Border Grid.Row="5" Background="#F4F2D5" Name="OpenSourceProjects" Visibility="Collapsed">
+                    <TextBlock Style="{StaticResource AboutFont}"
+                               Margin="20"
+                               FontSize="18"
+                               VerticalAlignment="Top">
+                        <Run>The development was inspired by two open source projects:</Run>
+                        <Hyperlink NavigateUri="http://www.codeproject.com/Articles/117037/WPF-Jigsaw-Puzzle">WPF Jigsaw Puzzle</Hyperlink>
+                        <Run>(WPF) licensed under</Run>
+                        <Hyperlink NavigateUri="http://www.codeproject.com/info/cpol10.aspx">CPOL 1.0.2</Hyperlink>
+                        <Run> and</Run>
+                        <Hyperlink NavigateUri="http://freesourcecode.net/csharpprojects/40595/C%23-Jigsaw-Puzzle-Game-in-csharp#.Vzh1uGzQCwV">C# Jigsaw Puzzle Game</Hyperlink>
+                        <Run>(Windows Forms), no license identified.</Run>
+                    </TextBlock>
+                </Border>
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</Page>

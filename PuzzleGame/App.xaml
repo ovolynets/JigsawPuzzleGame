@@ -1,0 +1,17 @@
+﻿<Application
+    x:Class="PuzzleGame.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:model="using:PuzzleGame.Model"
+    RequestedTheme="Light">
+    <Application.Resources>
+        <model:MyImageConverter x:Key="MyImageConverter" />
+        <model:DisplayedBoardSizeConverter x:Key="DisplayedBoardSizeConverter" />
+
+        <LinearGradientBrush x:Key="BackgroundTheme" StartPoint="0.4,0" EndPoint=".5,0.7">
+            <GradientStop Offset="0" Color="White"/>
+            <GradientStop Offset="1" Color="#BACCD4"/>
+        </LinearGradientBrush>
+    </Application.Resources>
+
+</Application>

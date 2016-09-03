@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
+  <Identity Name="38994OleksandrVolynets.VictoriasJigsawPuzzleforTod" Publisher="CN=43CFE98A-4F95-4DC4-A9D5-CFCEBDFCCE67" Version="1.1.0.0" />
+  <mp:PhoneIdentity PhoneProductId="b22e1f06-635e-4cc1-8770-f659362ccff1" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Properties>
+    <DisplayName>Victoria's Jigsaw Puzzle for Toddlers and Kids</DisplayName>
+    <PublisherDisplayName>Oleksandr Volynets</PublisherDisplayName>
+    <Logo>Assets\visuals\sunset_cropped.jpg</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="PuzzleGame.App">
+      <uap:VisualElements DisplayName="Victoria's Jigsaw Puzzle for Toddlers and Kids" Square150x150Logo="Assets\visuals\sunset_150px.jpg" Square44x44Logo="Assets\visuals\sunset_44px.jpg" Description="A jigsaw game for kids and their parents to create puzzles with your own pictures. Use your images, photos or screenshots from your computer for unforgettable game experience. This is my very first Windows Store app. If you have suggestions or find any bugs, email me to help improve the app. Rate the app if you like it (or don't like it). Developed with love and tested by my daughter who is currently two years old." BackgroundColor="#BAEBFF">
+        <uap:DefaultTile Wide310x150Logo="Assets\visuals\sunset_wide_310px.jpg" Square310x310Logo="Assets\visuals\sunset_310px.jpg">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo" />
+            <uap:ShowOn Tile="wide310x150Logo" />
+            <uap:ShowOn Tile="square310x310Logo" />
+          </uap:ShowNameOnTiles>
+        </uap:DefaultTile>
+        <uap:SplashScreen Image="Assets\visuals\flowers_600px.jpg" BackgroundColor="#BAEBFF" />
+        <uap:InitialRotationPreference>
+          <uap:Rotation Preference="landscape" />
+          <uap:Rotation Preference="landscapeFlipped" />
+        </uap:InitialRotationPreference>
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <uap:Capability Name="picturesLibrary" />
+  </Capabilities>
+</Package>

@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="PuzzleGame.View.GameBoardPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <!--        <Storyboard x:Name="ImageAppearance">-->
+        <!--            <FadeOutThemeAnimation TargetName="GameBoard" Duration="0:0:4" />-->
+        <!--        </Storyboard>-->
+    </Page.Resources>
+    <Grid MinHeight="500" Background="{StaticResource BackgroundTheme}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <Button Grid.Row="0" x:Name="BackButton" HorizontalAlignment="Left" Background="Transparent">
+            <Image Source="../Assets/icons/1463313288_navigation-left_blue.png" Width="100" PointerPressed="BackButton_Pressed"/>
+        </Button>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="180"/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="1" Name="NextImageButton" Background="Transparent">
+                <Image Source="../Assets/icons/1463312845_navigation-right-frame_blue.png" Width="160" PointerPressed="NextButton_Pressed"/>
+            </Button>
+        </Grid>
+        <Image Grid.Row="0" Grid.RowSpan="3" Name="SourceImage"
+               Source="{x:Bind ImageFile, Converter={StaticResource MyImageConverter}}"
+               Width="600"
+               Stretch="Uniform"
+               Opacity="0.2"/>
+        <Canvas Grid.Row="0" Grid.RowSpan="2" Name="GameBoard"/>
+        <MediaElement Grid.Row="0" x:Name="MediaElement"  AutoPlay="False"/>
+    </Grid>
+</Page>
