@@ -6,7 +6,7 @@ The app does not process or store any personal information about you.
 This app process images from the Picture folder in the user directory in order
 to display puzzle pieces. The data from the user content is not, however, 
 collected nor sent to any external party. This app is Open Source and can be
-retrieved from [github.com](https://github.com/ovolynets/JigsawPuzzleGame).
+retrieved from [github](https://github.com/ovolynets/JigsawPuzzleGame).
 
 ### App Store Statistics
 
