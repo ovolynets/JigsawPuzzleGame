@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="38994OleksandrVolynets.VictoriasJigsawPuzzleforTod" Publisher="CN=43CFE98A-4F95-4DC4-A9D5-CFCEBDFCCE67" Version="1.3.0.0" />
+  <Identity Name="38994OleksandrVolynets.VictoriasJigsawPuzzleforTod" Publisher="CN=43CFE98A-4F95-4DC4-A9D5-CFCEBDFCCE67" Version="1.3.1.0" />
   <mp:PhoneIdentity PhoneProductId="b22e1f06-635e-4cc1-8770-f659362ccff1" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Victoria's Jigsaw Puzzle for Toddlers and Kids</DisplayName>
