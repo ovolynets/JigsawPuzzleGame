@@ -28,7 +28,8 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="50"/>
                     <RowDefinition Height="150"/>
-                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="100"/>
                     <RowDefinition Height="100"/>
                     <RowDefinition Height="100"/>
                     <RowDefinition Height="*"/>
@@ -55,7 +56,21 @@
                     <TextBlock Grid.Column="0" Style="{StaticResource AboutFont}" Text="This game was inspired by Open Source projects" FontSize="24" VerticalAlignment="Top"/>
                     <TextBlock Grid.Column="1" Style="{StaticResource AboutFont}" Text="Show" Name="ToggleOpenSourceProjects" FontSize="24" Foreground="Blue" VerticalAlignment="Top" Tapped="ToggleOpenSourceProjects_OnTapped"/>
                 </Grid>
-                <Border Grid.Row="5" Background="#F4F2D5" Name="Licenses" Visibility="Collapsed">
+                <Grid Grid.Row="5" Margin="0,20,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="100"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Style="{StaticResource AboutFont}" Text="Privacy Policy" FontSize="24" VerticalAlignment="Top"/>
+                    <TextBlock Grid.Column="1"
+                               Style="{StaticResource AboutFont}"
+                               FontSize="24"
+                               Foreground="Blue"
+                               VerticalAlignment="Top">
+                        <Hyperlink NavigateUri="https://github.com/ovolynets/JigsawPuzzleGame/blob/master/PrivacyPolicy.md">Show</Hyperlink>
+                    </TextBlock>
+                </Grid>
+                <Border Grid.Row="6" Background="#F4F2D5" Name="Licenses" Visibility="Collapsed">
                     <TextBlock Style="{StaticResource AboutFont}"
                                Margin="20"
                                FontSize="18"
@@ -86,7 +101,7 @@
                         <Run>.</Run>
                     </TextBlock>
                 </Border>
-                <Border Grid.Row="5" Background="#F4F2D5" Name="OpenSourceProjects" Visibility="Collapsed">
+                <Border Grid.Row="6" Background="#F4F2D5" Name="OpenSourceProjects" Visibility="Collapsed">
                     <TextBlock Style="{StaticResource AboutFont}"
                                Margin="20"
                                FontSize="18"
