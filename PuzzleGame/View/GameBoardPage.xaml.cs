@@ -180,7 +180,7 @@ namespace PuzzleGame.View
                         Stretch = Stretch.None,
                         Transform = new TranslateTransform {
                             X = -col * _pieceWidth + shiftX,
-                            Y = - row * _pieceHeight + shiftY
+                            Y = -row * _pieceHeight + shiftY
                         }
                     };
 
@@ -244,7 +244,7 @@ namespace PuzzleGame.View
                     image.ManipulationMode = ManipulationModes.None;
                     var zIndexMin = _pieces.Where(x => x != _currentPiece).Select(w => Canvas.GetZIndex(w.Path)).Min();
                     Canvas.SetZIndex(image, zIndexMin - 1);
-                    PlaySound("131333__kaonaya__clap-3.wav", 200);
+                    PlaySound("clap.wav", 200);
                     VerifyCompletion();
                 }
             }
@@ -265,7 +265,7 @@ namespace PuzzleGame.View
         {
             if (_pieces.All(p => p.IsPlaced))
             {
-                PlaySound("273925__lemonjolly__hooray-yeah.wav", 1000);
+                PlaySound("yeah.wav", 1000);
                 NextImageButton.Visibility = Visibility.Visible;
                 SourceImage.Opacity = 1;
 //                ImageAppearance.Begin();
