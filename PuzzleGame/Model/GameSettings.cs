@@ -6,6 +6,7 @@ namespace PuzzleGame.Model
     public static class GameSettings
     {
         public static readonly int SnapTolerance = 4000;
+        public static readonly string[] ImageFileTypes = { ".jpg", ".jpeg", ".png", ".webp", ".gif", ".bmp", ".tif", ".heic" };
 
         public static Collection<Tuple<int, int>> BoardSizes = new Collection<Tuple<int, int>>
         {

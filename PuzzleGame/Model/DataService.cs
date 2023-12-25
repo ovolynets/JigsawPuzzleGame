@@ -31,7 +31,7 @@ namespace PuzzleGame.Model
                 _galleryFolder = installedLocation.GetFolderAsync("Assets\\sample").AsTask().Result;
             }
 
-            var queryOptions = new QueryOptions(CommonFileQuery.DefaultQuery, new[] { ".jpg", ".jpeg", ".png" });
+            var queryOptions = new QueryOptions(CommonFileQuery.DefaultQuery, GameSettings.ImageFileTypes);
             var fileList = _galleryFolder.CreateFileQueryWithOptions(queryOptions).GetFilesAsync().AsTask().Result;
             foreach (var f in fileList)
             {

@@ -67,9 +67,10 @@ namespace PuzzleGame.View
                 ViewMode = PickerViewMode.Thumbnail,
                 SuggestedStartLocation = PickerLocationId.PicturesLibrary
             };
-            picker.FileTypeFilter.Add(".jpg");
-            picker.FileTypeFilter.Add(".jpeg");
-            picker.FileTypeFilter.Add(".png");
+            foreach (string fileType in GameSettings.ImageFileTypes)
+            {
+                picker.FileTypeFilter.Add(fileType);
+            }
 
             var f = await picker.PickSingleFolderAsync();
             if (f != null)
