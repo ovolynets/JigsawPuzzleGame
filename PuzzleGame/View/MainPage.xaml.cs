@@ -27,7 +27,7 @@ namespace PuzzleGame.View
             {
                 GameSettings.SelectedBoardSizeIndex = (int) properties["boardSizeIndex"];
             }
-            if (properties.ContainsKey("imageDirectory"))
+            if (properties.ContainsKey("imageDirectory") && DataService.GalleryFolder == null)
             {
                 var f = await StorageFolder.GetFolderFromPathAsync((string)ApplicationData.Current.LocalSettings.Values["imageDirectory"]);
                 if (f != null)
